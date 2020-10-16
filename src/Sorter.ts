@@ -1,11 +1,11 @@
-interface Sortable {
-  length: number;
-  compare(leftIndex: number, rightIndex: number): boolean;
-  swap(leftIndex: number, rightIndex: number): void;
-}
+// interface Sortable {
+//   length: number;
+//   compare(leftIndex: number, rightIndex: number): boolean;
+//   swap(leftIndex: number, rightIndex: number): void;
+// }
 
 export abstract class Sorter {
-  abstract length: number;
+  abstract length: number;   // these abstract properties take the place of the previously used interface
   abstract compare(leftIndex: number, rightIndex: number): boolean;
   abstract swap(leftIndex: number, rightIndex: number): void;
 
